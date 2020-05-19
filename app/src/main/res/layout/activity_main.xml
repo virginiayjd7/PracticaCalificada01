@@ -6,14 +6,52 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/txt_x"
+        android:layout_width="120dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="28dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.718"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_y"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <TextView
+        android:id="@+id/txt_y"
+        android:layout_width="116dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="8dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.708"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_egual"
+        app:layout_constraintVertical_bias="0.037" />
+
+    <TextView
+        android:id="@+id/text_egual"
+        android:layout_width="161dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="175dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
     <EditText
-        android:id="@+id/texto_busqueda"
-        android:layout_width="196dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="24dp"
+        android:id="@+id/id_texto2"
+        android:layout_width="312dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Buscar texto"
+        android:hint="Ingrese el segundo texto"
         android:inputType="textPersonName"
         android:textSize="24sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,72 +59,63 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="92dp"
-        android:layout_height="44dp"
+        android:layout_width="151dp"
+        android:layout_height="38dp"
         android:layout_marginStart="44dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:onClick="Visualizar"
+        android:layout_marginTop="88dp"
         android:text="Button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.142"
-        app:layout_constraintStart_toEndOf="@+id/texto_busqueda"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_texto"
         tools:text="Ver" />
 
-    <TextView
-        android:id="@+id/txtLetras"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="28dp"
-        android:text="TextView"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtResultado"
-        tools:text="Resultado de Nro de Letras" />
-
-    <TextView
-        android:id="@+id/txtResultado"
-        android:layout_width="337dp"
-        android:layout_height="58dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="8dp"
-        android:text="TextView"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/texto_busqueda"
-        tools:text=" Resultado a Mostrar" />
-
-    <TextView
-        android:id="@+id/txtPalindromo"
-        android:layout_width="335dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="28dp"
-        android:text="TextView"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtLetras"
-        tools:text="Resultado Palabra Palindromo" />
-
     <EditText
         android:id="@+id/id_texto"
-        android:layout_width="248dp"
-        android:layout_height="43dp"
+        android:layout_width="317dp"
+        android:layout_height="48dp"
         android:layout_marginStart="28dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="8dp"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="Ingrese el texto"
+        android:hint="Ingrese el primer  texto"
         android:inputType="textPersonName"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Primera frase:"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/txt_y"
+        app:layout_constraintHorizontal_bias="0.626"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_egual"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Segunda frase"
+        app:layout_constraintBottom_toBottomOf="@+id/txt_x"
+        app:layout_constraintEnd_toStartOf="@+id/txt_x"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
