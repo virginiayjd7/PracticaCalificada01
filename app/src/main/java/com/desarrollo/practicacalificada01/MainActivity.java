@@ -53,41 +53,7 @@ public class MainActivity extends AppCompatActivity {
         }*/
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        Toast.makeText(this, "onStart", Toast.LENGTH_SHORT).show();
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-        Toast.makeText(this, "onResume", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    protected void onPause() {
-        Toast.makeText(this, "onPause", Toast.LENGTH_SHORT).show();
-        super.onPause();
-    }
-
-    @Override
-    protected void onStop() {
-        Toast.makeText(this, "onStop", Toast.LENGTH_SHORT).show();
-        super.onStop();
-    }
-
-    @Override
-    protected void onRestart() {
-        super.onRestart();
-        Toast.makeText(this, "onRestart", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    protected void onDestroy() {
-        Toast.makeText(this, "onDestroy", Toast.LENGTH_SHORT).show();
-        super.onDestroy();
-    }
     private void ver(String texto1, String texto2)
     {
         y1 = 0;y2= 0;
@@ -138,6 +104,36 @@ public class MainActivity extends AppCompatActivity {
         txt_2 = findViewById(R.id.txt_x);
 
 
+    }
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Toast.makeText(this, "OnStart", Toast.LENGTH_SHORT).show();
+        // La actividad está a punto de hacerse visible.
+    }
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Toast.makeText(this, "OnResume", Toast.LENGTH_SHORT).show();
+        // La actividad se ha vuelto visible (ahora se "reanuda").
+    }
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Toast.makeText(this, "OnPause", Toast.LENGTH_SHORT).show();
+        // Enfocarse en otra actividad  (esta actividad está a punto de ser "detenida").
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Toast.makeText(this, "OnStop", Toast.LENGTH_SHORT).show();
+        // La actividad ya no es visible (ahora está "detenida")
+    }
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Toast.makeText(this, "OnDestroy", Toast.LENGTH_SHORT).show();
+        // La actividad está a punto de ser destruida.
     }
 
 
